@@ -12,7 +12,7 @@ function App() {
     axios.get(request1).then((response) => {
       const { data } = response.data;
       console.log(data);
-      setUsers(users,[...data]);
+      setUsers(users, [...data]);
     });
   };
 
@@ -27,7 +27,7 @@ function App() {
               key={user.id}
               firstname={user.first_name}
               lastname={user.last_name}
-              source={user.}
+              source={user.avatar}
             />
           );
         })}
